@@ -20,8 +20,6 @@ def create_connection(db_file):
         # conn.close()
 
 
-
-
 def create_table_body(body, col, sch):
 
     if sch['type'] == 'integer':
@@ -41,7 +39,7 @@ def create_table_body(body, col, sch):
     return body
 
 
-FILE_NAMES = ['node', 'node_tags', 'way', 'way_nodes', 'way_tags']
+FILE_NAMES = ['node', 'node_tags', 'way', 'way_tags', 'way_nodes']
 # FILE_NAMES = ['way_nodes']
 if __name__ == '__main__':
     conn = create_connection('files/pythonsqlite.db')
@@ -86,4 +84,4 @@ if __name__ == '__main__':
             print(count)
             # print(sql)
             c.execute(sql)
-            conn.commit()
+        conn.commit()

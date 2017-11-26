@@ -1,7 +1,9 @@
 # Note: The schema is stored in a .py file in order to take advantage of the
 # int() and float() type coercion functions. Otherwise it could easily stored as
 # as JSON or another serialized format.
-
+"""
+This file is adapted from the Lesson 4 Section 13 of Data Analyst Program
+"""
 schema = {
     'node': {
         'schema': {
